@@ -1,0 +1,16 @@
+[project]
+name = "support-agent-evals"
+version = "0.1.0"
+description = "A customer-support AI agent with tool calls, and a scenario suite that grades what it does, not just what it says."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Enxo Mucaj" }]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+claude = ["anthropic>=1.0"]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["support_evals"]
